@@ -1,0 +1,7 @@
+[user]
+	name = Brad Richardson
+	email = brad.richardson@transware.net
+[push]
+	default = simple
+[core]
+	editor = vim

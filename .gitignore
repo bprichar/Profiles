@@ -2,3 +2,7 @@
 !.gitignore
 !.bashrc
 !.profile
+!.gitconfig
+!.vimrc
+!.vim/colors/vividchalk.vim
+!.tmux.conf
