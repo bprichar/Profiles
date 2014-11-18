@@ -8,6 +8,9 @@ case $- in
       *) return;;
 esac
 
+# Add $Home/bin and ./ to path
+PATH="./:$PATH:$HOME/bin"
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
