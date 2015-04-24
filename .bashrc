@@ -125,3 +125,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+export LD_LIBRARY_PATH=/home/bpr/.local/lib:$LD_LIBRARY_PATH
+export LIBRARY_PATH=/home/bpr/.local/lib:$LIBRARY_PATH
+export CPLUS_INCLUDE_PATH=/home/bpr/.local/include:$CPLUS_INCLUDE_PATH
+export C_INCLUDE_PATH=/home/bpr/.local/include:$C_INCLUDE_PATH
+export PATH=/home/bpr/.local/bin:$PATH
+export LD_LIBRARY_PATH=/home/bpr/.local/lib:$LD_LIBRARY_PATH
