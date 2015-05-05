@@ -1,0 +1,12 @@
+; generated_rule PidginList
+( if 
+( and
+( is ( application_name ) "Pidgin" )
+( is ( window_name ) "Buddy List" )
+) 
+( begin 
+( stick )
+( geometry "300x500+3200+1100" )
+( println "match" )
+)
+)

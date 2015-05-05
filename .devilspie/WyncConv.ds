@@ -1,0 +1,11 @@
+; generated_rule WyncConv
+( if 
+( and
+( is ( window_class ) "Wync" )
+( not ( is ( window_name ) "Wync" ) )
+)
+( begin 
+( geometry "+2800+500" )
+( println "match" )
+)
+)
