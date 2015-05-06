@@ -1,0 +1,12 @@
+; generated_rule SkyList
+( if 
+( and
+( is ( application_name ) "Sky" )
+( is ( window_name ) "Sky" )
+)
+( begin 
+( stick )
+( geometry "400x1000+3100+10" )
+( println "match" )
+)
+)
