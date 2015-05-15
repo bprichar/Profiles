@@ -132,3 +132,19 @@ export CPLUS_INCLUDE_PATH=/home/bpr/.local/include:$CPLUS_INCLUDE_PATH
 export C_INCLUDE_PATH=/home/bpr/.local/include:$C_INCLUDE_PATH
 export PATH=/home/bpr/.local/bin:$PATH
 export LD_LIBRARY_PATH=/home/bpr/.local/lib:$LD_LIBRARY_PATH
+
+          # -------------------------------------------------
+          # set shell environment variables for MCNP5
+
+            export PATH
+            PATH="/home/bpr/LANL/MCNP5/bin:$PATH"
+
+            export DISPLAY
+            DISPLAY="localhost:0.0"
+          # -------------------------------------------------
+
+          # -------------------------------------------------
+          # set shell environment variable  for MCNP_DATA
+            export DATAPATH
+            DATAPATH="/home/bpr/LANL/MCNP_DATA"
+          # -------------------------------------------------

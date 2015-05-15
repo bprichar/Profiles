@@ -20,3 +20,19 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+          # -------------------------------------------------
+          # set shell environment variables for MCNP5
+
+            export PATH
+            PATH="/home/bpr/LANL/MCNP5/bin:$PATH"
+
+            export DISPLAY
+            DISPLAY="localhost:0.0"
+          # -------------------------------------------------
+
+          # -------------------------------------------------
+          # set shell environment variable  for MCNP_DATA
+            export DATAPATH
+            DATAPATH="/home/bpr/LANL/MCNP_DATA"
+          # -------------------------------------------------
