@@ -139,8 +139,8 @@ export LD_LIBRARY_PATH=/home/bpr/.local/lib:$LD_LIBRARY_PATH
             export PATH
             PATH="/home/bpr/LANL/MCNP5/bin:$PATH"
 
-            export DISPLAY
-            DISPLAY="localhost:0.0"
+          #  export DISPLAY
+          #  DISPLAY="localhost:0.0"
           # -------------------------------------------------
 
           # -------------------------------------------------

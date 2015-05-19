@@ -27,7 +27,7 @@ fi
             export PATH
             PATH="/home/bpr/LANL/MCNP5/bin:$PATH"
 
-            export DISPLAY
+          #  export DISPLAY
 #            DISPLAY="localhost:0.0"
           # -------------------------------------------------
 
