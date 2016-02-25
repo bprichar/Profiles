@@ -148,3 +148,6 @@ export LD_LIBRARY_PATH=/home/bpr/.local/lib:$LD_LIBRARY_PATH
             export DATAPATH
             DATAPATH="/home/bpr/LANL/MCNP_DATA"
           # -------------------------------------------------
+
+# Go path
+export GOPATH="$HOME/go_work"
