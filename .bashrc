@@ -151,3 +151,6 @@ export LD_LIBRARY_PATH=/home/bpr/.local/lib:$LD_LIBRARY_PATH
 
 # Go path
 export GOPATH="$HOME/go_work"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
