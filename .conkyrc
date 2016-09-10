@@ -347,7 +347,7 @@ ${fs_bar 4,140 /}
 
 ${color slate grey}NET: 
 ${color}Up: ${color }${upspeed enp2s0}/s
-${upspeedgraph eth0 20,140 000000 ffffff}
+${upspeedgraph enp2s0 20,140 000000 ffffff}
 ${color}Down: ${color }${downspeed enp2s0}/s${color}
-${downspeedgraph eth0 20,140 000000 ffffff}
+${downspeedgraph enp2s0 20,140 000000 ffffff}
 ]]
