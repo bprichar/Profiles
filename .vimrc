@@ -72,3 +72,5 @@ function InsertTabWrapper()
  endif
 endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<CR>
+
+let g:ycm_server_python_interpreter = '/usr/bin/python'
