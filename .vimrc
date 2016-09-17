@@ -29,6 +29,9 @@ Plugin 'VundleVim/Vundle.vim'
 "Valloric YouCompleteMe Plugin
 Plugin 'Valloric/YouCompleteMe'
 
+" Add a whole bunch of colorschemes
+Plugin 'flazz/vim-colorschemes'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -49,7 +52,7 @@ set backspace=indent,eol,start
 set ruler
 set nowritebackup
 set mouse=a
-colorscheme vividchalk
+ colorscheme inkpot
 syntax on
 set t_Co=256
 set tabstop=4
