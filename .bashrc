@@ -9,7 +9,7 @@ case $- in
 esac
 
 # Add $Home/bin and ./ to path
-PATH="./:$PATH:$HOME/bin:/qa/bin"
+PATH="./:$PATH:$HOME/bin:"
 
 [[ -d ~/.history ]] || mkdir --mode=0700 ~/.history
 [[ -d ~/.history ]] && chmod 0700 ~/.history
@@ -124,18 +124,18 @@ if ! shopt -oq posix; then
   fi
 fi
 export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
-export LD_LIBRARY_PATH=/home/bpr/.local/lib:$LD_LIBRARY_PATH
-export LIBRARY_PATH=/home/bpr/.local/lib:$LIBRARY_PATH
-export CPLUS_INCLUDE_PATH=/home/bpr/.local/include:$CPLUS_INCLUDE_PATH
-export C_INCLUDE_PATH=/home/bpr/.local/include:$C_INCLUDE_PATH
-export PATH=/home/bpr/.local/bin:$PATH
-export LD_LIBRARY_PATH=/home/bpr/.local/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$HOME/.local/lib:$LD_LIBRARY_PATH
+export LIBRARY_PATH=$HOME/.local/lib:$LIBRARY_PATH
+export CPLUS_INCLUDE_PATH=$HOME/.local/include:$CPLUS_INCLUDE_PATH
+export C_INCLUDE_PATH=$HOME/.local/include:$C_INCLUDE_PATH
+export PATH=$HOME/.local/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/.local/lib:$LD_LIBRARY_PATH
 
           # -------------------------------------------------
           # set shell environment variables for MCNP5
 
             export PATH
-            PATH="/home/bpr/LANL/MCNP5/bin:$PATH"
+            PATH="$HOME/LANL/MCNP5/bin:$PATH"
 
           #  export DISPLAY
           #  DISPLAY="localhost:0.0"
@@ -144,7 +144,7 @@ export LD_LIBRARY_PATH=/home/bpr/.local/lib:$LD_LIBRARY_PATH
           # -------------------------------------------------
           # set shell environment variable  for MCNP_DATA
             export DATAPATH
-            DATAPATH="/home/bpr/LANL/MCNP_DATA"
+            DATAPATH="$HOME/LANL/MCNP_DATA"
           # -------------------------------------------------
 
 # Go path
