@@ -51,7 +51,7 @@ own_window_class="Conky",
 own_window_hints="undecorated,sticky,skip_taskbar,skip_pager,below",
 
 -- Put in second desktop
-xinerama_head = 0,
+-- xinerama_head = 0,
 
 -- Use double buffering (reduces flicker, may not work for everyone)
 double_buffer=true,
