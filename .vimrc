@@ -32,6 +32,24 @@ Plugin 'Valloric/YouCompleteMe'
 " Add a whole bunch of colorschemes
 Plugin 'flazz/vim-colorschemes'
 
+" A fuzzy file finder
+Plugin 'ctrlp.vim'
+
+" A better file tree viewer
+Plugin 'jistr/vim-nerdtree-tabs'
+
+" Make the status line nicer
+Plugin 'vim-airline/vim-airline'
+
+" Make moving around a bit better
+Plugin 'EasyMotion'
+
+" Syntax Checking
+Plugin 'Syntastic'
+
+" Brackets, quotes, etc. completion
+Plugin 'surround.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
