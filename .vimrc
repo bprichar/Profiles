@@ -36,6 +36,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'ctrlp.vim'
 
 " A better file tree viewer
+Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 
 " Make the status line nicer
@@ -96,5 +97,8 @@ inoremap <tab> <c-r>=InsertTabWrapper()<CR>
 
 " turn on the airline status bar
 set laststatus=2
+
+" Map a command to NERDTree
+map <C-n> :NERDTree<CR>
 
 let g:ycm_server_python_interpreter = '/usr/bin/python'
