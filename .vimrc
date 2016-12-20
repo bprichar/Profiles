@@ -101,4 +101,11 @@ set laststatus=2
 " Map a command to NERDTree
 map <C-n> :NERDTree<CR>
 
+" Clear sign column for syntastic
+hi clear SignColumn
+augroup mySyntastic
+    au!
+    au FileType tex let b:syntastic_mode = "passive"
+augroup END
+
 let g:ycm_server_python_interpreter = '/usr/bin/python'
