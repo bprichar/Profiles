@@ -94,4 +94,7 @@ function InsertTabWrapper()
 endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<CR>
 
+" turn on the airline status bar
+set laststatus=2
+
 let g:ycm_server_python_interpreter = '/usr/bin/python'
