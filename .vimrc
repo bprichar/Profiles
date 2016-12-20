@@ -39,6 +39,9 @@ Plugin 'ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 
+" List open buffers
+Plugin 'jlanzarotta/bufexplorer'
+
 " Make the status line nicer
 Plugin 'vim-airline/vim-airline'
 
