@@ -47,6 +47,7 @@ Plugin 'EasyMotion'
 
 " Syntax Checking
 Plugin 'Syntastic'
+Plugin 'trailing-whitespace'
 
 " Brackets, quotes, etc. completion
 Plugin 'surround.vim'
