@@ -32,6 +32,34 @@ Plugin 'Valloric/YouCompleteMe'
 " Add a whole bunch of colorschemes
 Plugin 'flazz/vim-colorschemes'
 
+" A fuzzy file finder
+Plugin 'ctrlp.vim'
+
+" A better file tree viewer
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+
+" List open buffers
+Plugin 'jlanzarotta/bufexplorer'
+
+" Make the status line nicer
+Plugin 'vim-airline/vim-airline'
+
+" Make moving around a bit better
+Plugin 'EasyMotion'
+
+" Syntax Checking
+Plugin 'Syntastic'
+Plugin 'trailing-whitespace'
+
+" Brackets, quotes, etc. completion
+Plugin 'surround.vim'
+
+" Tags for goto definition
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-easytags'
+Plugin 'majutsushi/tagbar'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -58,6 +86,8 @@ set t_Co=256
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set number
+set showcmd
 
 set noautoindent
 filetype plugin indent off
@@ -67,7 +97,7 @@ if has("gui_running")
 endif
 
 function InsertTabWrapper()
- let col = col('.') - 1 
+ let col = col('.') - 1
  if !col || getline('.')[col - 1] !~ '\k'
    return "\<tab>"
  else
@@ -75,5 +105,28 @@ function InsertTabWrapper()
  endif
 endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<CR>
+
+" turn on the airline status bar
+set laststatus=2
+
+" Map a command to NERDTree
+map <C-n> :NERDTree<CR>
+
+" Clear sign column for syntastic
+hi clear SignColumn
+augroup mySyntastic
+    au!
+    au FileType tex let b:syntastic_mode = "passive"
+augroup END
+
+" Tagfile settings
+set tags=./tags;,~/.vimtags
+" Sensible defaults
+let g:easytags_events = ['BufReadPost', 'BufWritePost']
+let g:easytags_async = 1
+let g:easytags_dynamic_files = 2
+let g:easytags_resolve_links = 1
+let g:easytags_suppress_ctags_warning = 1
+map <C-b> :TagbarToggle<CR>
 
 let g:ycm_server_python_interpreter = '/usr/bin/python'
