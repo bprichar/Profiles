@@ -89,6 +89,8 @@ set expandtab
 set number
 set showcmd
 
+set hidden
+
 set noautoindent
 filetype plugin indent off
 
