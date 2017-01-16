@@ -136,3 +136,4 @@ let g:easytags_suppress_ctags_warning = 1
 map <C-b> :TagbarToggle<CR>
 
 let g:ycm_server_python_interpreter = '/usr/bin/python'
+let g:ycm_extra_conf_globlist = ['!~/Downloads/*', '~/*', '!/*']
