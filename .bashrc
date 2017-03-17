@@ -152,3 +152,7 @@ export GOPATH="$HOME/go_work"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+if [ -f /opt/moose/environments/moose_profile ]; then
+  . /opt/moose/environments/moose_profile
+fi
