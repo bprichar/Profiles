@@ -11,15 +11,6 @@ esac
 # Add $Home/bin and ./ to path
 PATH="./:$PATH:$HOME/bin:"
 
-[[ -d ~/.history ]] || mkdir --mode=0700 ~/.history
-[[ -d ~/.history ]] && chmod 0700 ~/.history
-HISTFILE=~/.history/history.$$
-# close any old history file by zeroing HISTFILESIZE
-HISTFILESIZE=0
-# then set HISTFILESIZE to a large value
-HISTFILESIZE=4096
-HISTSIZE=4096
-
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
@@ -123,13 +114,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
-export LD_LIBRARY_PATH=$HOME/.local/lib:$LD_LIBRARY_PATH
-export LIBRARY_PATH=$HOME/.local/lib:$LIBRARY_PATH
-export CPLUS_INCLUDE_PATH=$HOME/.local/include:$CPLUS_INCLUDE_PATH
-export C_INCLUDE_PATH=$HOME/.local/include:$C_INCLUDE_PATH
 export PATH=$HOME/.local/bin:$PATH
-export LD_LIBRARY_PATH=$HOME/.local/lib:$LD_LIBRARY_PATH
 
           # -------------------------------------------------
           # set shell environment variables for MCNP5
