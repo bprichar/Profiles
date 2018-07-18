@@ -1,7 +1,0 @@
-[user]
-	name = Brad Richardson
-	email = brichardson@structint.com
-[push]
-	default = simple
-[core]
-	editor = vim
